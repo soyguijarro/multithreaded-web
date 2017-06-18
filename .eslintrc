@@ -1,0 +1,12 @@
+{
+  "extends": "airbnb-base",
+  "rules": {
+    "no-param-reassign": "off",
+    "no-console": "off"
+  },
+  "env": {
+    "browser": true,
+    "worker": true,
+    "serviceworker": true
+  }
+}

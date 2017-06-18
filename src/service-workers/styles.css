@@ -1,0 +1,39 @@
+.main {
+  padding: 0;
+  align-items: center;
+}
+
+.main__controls {
+  padding: 1em;
+}
+
+.main__controls__input__item {
+  max-width: 8em;
+}
+
+.main__strip {
+  flex-grow: 1;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  overflow-x: scroll;
+}
+
+.main__strip img {
+  height: 12em;
+  flex-shrink: 0;
+  animation: scale-up 0.3s;
+}
+
+@keyframes scale-up {
+  from {
+    opacity: 0;
+    transform: translateY(20%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

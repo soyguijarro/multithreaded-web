@@ -1,0 +1,48 @@
+.main__controls__input__item {
+  max-width: 3.5em;
+}
+
+.main__controls__result {
+  align-items: center;
+  background-color: #ffc107;
+  margin-top: 1em;
+  padding: 0.75em 1em;
+}
+
+.main__figures {
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main__figures__square {
+  flex-shrink: 0;
+  height: 15vh;
+  width: 15vh;
+  animation: alternate-spin 1s alternate infinite;
+}
+
+.main__figures__circle {
+  flex-shrink: 0;
+  position: relative;
+  left: 0;
+  height: 15vh;
+  width: 15vh;
+  border-radius: 100%;
+  background-color: #3F51B5;
+  margin-left: 1em;
+}
+
+@keyframes alternate-spin {
+  from {
+    background-color: #009688;
+    transform: scale(0.5) rotate(360deg);
+  }
+
+  to {
+    background-color: #E91E63;
+    transform: scale(1) rotate(0);
+  }
+}

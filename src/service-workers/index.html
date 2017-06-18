@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Service Workers</title>
+    <link rel="shortcut icon" href="../favicon.png" />
+    <link rel="stylesheet" href="../common.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="theme-color" content="#3f51b5" />
+    <script src="./main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">
+        The multithreaded web
+      </h1>
+      <h2 class="header__subtitle">
+        Service workers
+      </h2>
+    </header>
+
+    <main class="main">
+      <form class="main__controls" id="form">
+        <p class="main__controls__input">
+          Get picture for GitHub user
+          @<input class="main__controls__input__item" id="username" type="text" />
+        </p>
+        <div class="main__controls__buttons">
+          <button type="submit" class="main__controls__buttons__item" id="add">
+            Add to gallery
+          </button>
+          <button class="main__controls__buttons__item" id="clear">
+            Clear gallery
+          </button>
+        </div>
+      </form>
+
+      <div class="main__strip" id="strip">
+      </div>
+    </main>
+
+    <footer class="footer">
+      A demo by <a class="footer__link" href="http://soyguijarro.com">@soyguijarro</a>
+    </footer>
+  </body>
+</html>

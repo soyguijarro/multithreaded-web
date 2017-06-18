@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500i');
+
+html,
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #424242;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  padding: 1em;
+}
+
+.header {
+  color: #ffffff;
+  background-color: #3f51b5;
+  margin-bottom: 0.5em;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.header__title {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2em;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+  width: 100%;
+  margin: auto;
+}
+
+.main__controls {
+  flex-grow: 1;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.main__controls__input {
+  margin-bottom: 2em;
+}
+
+.main__controls__input__item {
+  outline: none;
+  font-family: 'Roboto';
+  font-size: 1em;
+  font-weight: 400;
+  color: #424242;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #B0BEC5;
+  text-align: center;
+  transition: border-color 200ms ease-out;
+}
+
+.main__controls__input__item:focus {
+  border-color: #3f51b5;
+}
+
+.main__controls__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main__controls__buttons__item {
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 1em;
+  color: #ffffff;
+  background-color: #607D8B;
+  border: none;
+  padding: 0.75em;
+  transition: background-color 200ms ease-out;
+}
+
+.main__controls__buttons__item:first-child {
+  margin-right: 1em;
+}
+
+.main__controls__buttons__item:hover {
+  cursor: pointer;
+  background-color: #78909C;
+}
+
+.main__controls__buttons__item:active {
+  background-color: #607D8B;
+}
+
+.main__controls__buttons__item:disabled {
+  cursor: not-allowed;
+  background-color: #CFD8DC;
+}
+
+.footer {
+  font-size: 0.9em;
+  text-align: center;
+  background-color: #CFD8DC;
+}
+
+.footer__link {
+  color: #3f51b5;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 24em) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  body {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "multithreaded-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Web workers and service workers demos",
+  "devDependencies": {
+    "eslint": "4.0.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-import": "2.3.0",
+    "http-server": "0.10.0",
+    "husky": "0.14.1"
+  },
+  "scripts": {
+    "start": "http-server src",
+    "lint": "eslint --fix src",
+    "precommit": "npm run lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/soyguijarro/multithreaded-web.git"
+  },
+  "author": {
+    "name": "Ramón Guijarro",
+    "email": "hola@soyguijarro.com",
+    "url": "http://soyguijarro.com"
+  },
+  "license": "MIT"
+}
